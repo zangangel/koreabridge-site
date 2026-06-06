@@ -12,7 +12,9 @@ It combines:
 
 ## Live Website
 
-This repository is intended to be published with GitHub Pages from the `main` branch root.
+https://zangangel.github.io/koreabridge-site/
+
+This repository is published with GitHub Pages from the `main` branch root.
 
 ## Local Files
 

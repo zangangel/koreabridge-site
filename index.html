@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KoreaBridge is a trusted start platform for foreigners in Korea: arrival planning, housing confidence, job safety, official guides, and verified help.">
+  <title>KoreaBridge | Your trusted start in Korea</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="KoreaBridge home">
+      <span class="brand-mark">KB</span>
+      <span>
+        <strong>KoreaBridge</strong>
+        <small>Your trusted start in Korea</small>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#life-hub">Life hub</a>
+      <a href="#arrival-path">Arrival</a>
+      <a href="#housing-confidence">Housing</a>
+      <a href="#official-guide">Guides</a>
+      <a href="#checker">Safety checker</a>
+    </nav>
+    <a class="header-action" href="#review">Request review</a>
+  </header>
+
+  <main id="top">
+    <section class="hero-shell benchmark-hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow">Seoul beta for foreign students and first-time workers</div>
+        <h1 id="hero-title">Your trusted start in Korea.</h1>
+        <p>KoreaBridge combines arrival planning, verified housing confidence, official local guidance, and pre-sign safety checks so foreigners can make safer decisions before paying, signing, or starting work.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#arrival-path">Plan my arrival</a>
+          <a class="button secondary" href="#checker">Run safety check</a>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Street_hongdae_Seoul.jpg" alt="A busy street in Hongdae, Seoul">
+        <figcaption>Hongdae, Seoul. Photo: U0894629, CC BY-SA 4.0.</figcaption>
+      </figure>
+    </section>
+
+    <section class="benchmark-bar" aria-label="Benchmark strategy">
+      <article>
+        <strong>GaijinPot-style life hub</strong>
+        <span>Jobs, housing, guides, and neighborhoods organized around foreigner life moments.</span>
+      </article>
+      <article>
+        <strong>Go! Go! Nihon-style arrival path</strong>
+        <span>Step-by-step setup for housing, documents, phone, banking, and work permission.</span>
+      </article>
+      <article>
+        <strong>Integreat-style official guide layer</strong>
+        <span>Source-backed local guidance separated from community tips and partner offers.</span>
+      </article>
+      <article>
+        <strong>Uniplaces-style housing confidence</strong>
+        <span>Clear rental terms, verification levels, and pre-payment checks before commitment.</span>
+      </article>
+    </section>
+
+    <section id="life-hub" class="content-band" aria-labelledby="life-hub-title">
+      <div class="section-heading">
+        <span class="eyebrow">Life hub</span>
+        <h2 id="life-hub-title">One place for the first decisions that matter.</h2>
+        <p>Instead of a generic forum, KoreaBridge routes people into the right pathway: housing, work, documents, money, phone, health, or local help.</p>
+      </div>
+      <div id="lifeHubGrid" class="life-grid"></div>
+    </section>
+
+    <section id="arrival-path" class="content-band muted-band" aria-labelledby="arrival-title">
+      <div class="section-heading">
+        <span class="eyebrow">Arrival path</span>
+        <h2 id="arrival-title">From landing to settled in 90 days.</h2>
+        <p>The product flow borrows the clarity of study-abroad onboarding: each step has timing, blockers, risk checks, and next actions.</p>
+      </div>
+      <div id="arrivalPath" class="arrival-track"></div>
+      <div class="plan-layout">
+        <div class="progress-panel">
+          <div class="progress-header">
+            <strong id="progressLabel">0 of 12 done</strong>
+            <span id="progressPercent">0%</span>
+          </div>
+          <div class="progress-meter"><span id="progressBar"></span></div>
+        </div>
+        <div id="checklist" class="task-list"></div>
+      </div>
+    </section>
+
+    <section id="housing-confidence" class="content-band" aria-labelledby="housing-title">
+      <div class="section-heading">
+        <span class="eyebrow">Housing confidence</span>
+        <h2 id="housing-title">Verified enough before you pay.</h2>
+        <p>Inspired by international housing marketplaces, KoreaBridge makes rental confidence visible: address registration, signing party, fee clarity, refund terms, and verification level.</p>
+      </div>
+      <div id="housingCards" class="housing-board"></div>
+    </section>
+
+    <section id="official-guide" class="content-band muted-band" aria-labelledby="official-title">
+      <div class="section-heading">
+        <span class="eyebrow">Trusted guide layer</span>
+        <h2 id="official-title">Official information, practical translation.</h2>
+        <p>Every guide separates official sources, expert-reviewed notes, and community experience so users know what is verified and what is anecdotal.</p>
+      </div>
+      <div id="officialGuideGrid" class="trust-source-grid"></div>
+    </section>
+
+    <section id="marketplace" class="content-band" aria-labelledby="marketplace-title">
+      <div class="section-heading">
+        <span class="eyebrow">Verified help marketplace</span>
+        <h2 id="marketplace-title">Human help when the risk is real.</h2>
+        <p>Partner offers are structured by response time, language, scope, price range, and verification level. Paid placement never changes safety ranking.</p>
+      </div>
+      <div id="marketplaceGrid" class="marketplace-grid"></div>
+    </section>
+
+    <section id="checker" class="tool-band" aria-labelledby="checker-title">
+      <div class="section-heading">
+        <span class="eyebrow">Decision safety</span>
+        <h2 id="checker-title">Pre-sign safety checker</h2>
+        <p>Run this before paying a deposit, signing a room contract, accepting a trial shift, or starting work.</p>
+      </div>
+
+      <div class="checker-layout">
+        <section class="checker-panel" aria-label="Safety checker form">
+          <div class="segmented-control" role="tablist" aria-label="Checker type">
+            <button class="active" type="button" data-checker-tab="room" role="tab" aria-selected="true">Room</button>
+            <button type="button" data-checker-tab="job" role="tab" aria-selected="false">Job</button>
+          </div>
+
+          <form id="roomForm" class="checker-form" data-checker-form="room">
+            <div class="field-grid">
+              <label>
+                Area
+                <select name="area">
+                  <option value="sinchon">Sinchon / Ewha / Sogang</option>
+                  <option value="hongdae">Hongdae / Yeonnam</option>
+                  <option value="hyehwa">Hyehwa / Sungkyunkwan</option>
+                  <option value="hanyang">Hanyang / Wangsimni</option>
+                  <option value="other">Other area</option>
+                </select>
+              </label>
+              <label>
+                Room type
+                <select name="roomType">
+                  <option value="one">One-room / officetel</option>
+                  <option value="goshiwon">Goshiwon</option>
+                  <option value="share">Share house</option>
+                  <option value="short">Short-term furnished room</option>
+                  <option value="sublet">Sublease</option>
+                </select>
+              </label>
+              <label>
+                Deposit
+                <select name="depositBand">
+                  <option value="none">None</option>
+                  <option value="under_1m">Under KRW 1M</option>
+                  <option value="1m_5m">KRW 1M-5M</option>
+                  <option value="5m_20m">KRW 5M-20M</option>
+                  <option value="over_20m">Over KRW 20M</option>
+                </select>
+              </label>
+              <label>
+                Address registration
+                <select name="addressRegistration">
+                  <option value="yes">Possible</option>
+                  <option value="unsure">Not sure</option>
+                  <option value="no">Not possible</option>
+                </select>
+              </label>
+              <label>
+                Written contract
+                <select name="writtenContract">
+                  <option value="translated">Korean plus translation</option>
+                  <option value="korean">Korean only</option>
+                  <option value="unsure">Not sure</option>
+                  <option value="none">No written contract</option>
+                </select>
+              </label>
+              <label>
+                Signing party
+                <select name="signingParty">
+                  <option value="agent">Licensed real estate agent</option>
+                  <option value="landlord">Landlord directly</option>
+                  <option value="school">School or company</option>
+                  <option value="tenant">Current tenant / sublease</option>
+                  <option value="unknown">Unknown</option>
+                </select>
+              </label>
+              <label>
+                Upfront payment
+                <select name="upfrontPayment">
+                  <option value="no">No pressure</option>
+                  <option value="small">Small reservation fee</option>
+                  <option value="large">Large payment before verification</option>
+                </select>
+              </label>
+              <label>
+                Registry or ownership check
+                <select name="registryChecked">
+                  <option value="yes">Checked</option>
+                  <option value="no">Not checked</option>
+                  <option value="unsure">Not sure what this means</option>
+                </select>
+              </label>
+              <label class="full-span">
+                Refund, utilities, and maintenance fee terms
+                <select name="refundTerms">
+                  <option value="clear">Clearly written</option>
+                  <option value="unclear">Unclear</option>
+                  <option value="none">Not written</option>
+                </select>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button class="button primary" type="submit">Check room risk</button>
+              <button class="button secondary" type="reset">Reset</button>
+            </div>
+          </form>
+
+          <form id="jobForm" class="checker-form hidden" data-checker-form="job">
+            <div class="field-grid">
+              <label>
+                Visa or status
+                <select name="visaStatus">
+                  <option value="d2">D-2 student</option>
+                  <option value="d4">D-4 language student</option>
+                  <option value="h1">H-1 working holiday</option>
+                  <option value="e">E-series work visa</option>
+                  <option value="f">F-series visa</option>
+                  <option value="tourist">Tourist / short-term</option>
+                  <option value="unknown">Not sure</option>
+                </select>
+              </label>
+              <label>
+                Job type
+                <select name="jobType">
+                  <option value="cafe">Cafe / restaurant</option>
+                  <option value="retail">Retail</option>
+                  <option value="office">Office / admin</option>
+                  <option value="teaching">Teaching / tutoring</option>
+                  <option value="factory">Factory / warehouse</option>
+                  <option value="promo">Modeling / promotion</option>
+                </select>
+              </label>
+              <label>
+                Hourly pay
+                <select name="payBand">
+                  <option value="under_10000">Under KRW 10,000</option>
+                  <option value="10000_12000">KRW 10,000-12,000</option>
+                  <option value="12000_15000">KRW 12,000-15,000</option>
+                  <option value="over_15000">Over KRW 15,000</option>
+                  <option value="unstated">Not stated</option>
+                </select>
+              </label>
+              <label>
+                Weekly hours
+                <select name="weeklyHours">
+                  <option value="under_10">Under 10</option>
+                  <option value="10_20">10-20</option>
+                  <option value="20_30">20-30</option>
+                  <option value="over_30">Over 30</option>
+                  <option value="unknown">Not clear</option>
+                </select>
+              </label>
+              <label>
+                Written contract
+                <select name="writtenContract">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                  <option value="unsure">Not sure</option>
+                </select>
+              </label>
+              <label>
+                Employer identity
+                <select name="employerIdentity">
+                  <option value="yes">Name and address clear</option>
+                  <option value="partial">Only partly clear</option>
+                  <option value="no">Not clear</option>
+                </select>
+              </label>
+              <label>
+                Payment method
+                <select name="paymentMethod">
+                  <option value="bank">Bank transfer</option>
+                  <option value="cash">Cash only</option>
+                  <option value="unclear">Not clear</option>
+                </select>
+              </label>
+              <label>
+                Passport or ARC holding
+                <select name="passportArcHolding">
+                  <option value="no">Not requested</option>
+                  <option value="yes">Employer asks to hold it</option>
+                  <option value="unsure">Not sure</option>
+                </select>
+              </label>
+              <label>
+                Work permission attitude
+                <select name="workPermission">
+                  <option value="clear">They ask for proper permission</option>
+                  <option value="ignored">They say permission is not important</option>
+                  <option value="unclear">Not discussed</option>
+                </select>
+              </label>
+              <label>
+                Job fees
+                <select name="jobFees">
+                  <option value="no">No fees</option>
+                  <option value="yes">Training, uniform, or placement fee</option>
+                  <option value="unsure">Not sure</option>
+                </select>
+              </label>
+            </div>
+            <div class="form-actions">
+              <button class="button primary" type="submit">Check job risk</button>
+              <button class="button secondary" type="reset">Reset</button>
+            </div>
+          </form>
+        </section>
+
+        <aside class="result-panel" aria-live="polite">
+          <div id="resultEmpty" class="result-empty">
+            <span class="status-dot"></span>
+            <h3>Risk report appears here</h3>
+            <p>Run a check to see the level, red flags, and next steps.</p>
+          </div>
+          <div id="resultOutput" class="hidden"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="review" class="review-band" aria-labelledby="review-title">
+      <div class="review-copy">
+        <span class="eyebrow">Manual review beta</span>
+        <h2 id="review-title">Request a human review when the checker flags risk.</h2>
+        <p>For high-risk room or job decisions, KoreaBridge creates a short intake summary you can send to the review team or a verified partner.</p>
+      </div>
+      <form id="reviewForm" class="review-form">
+        <label>
+          Review type
+          <select name="reviewType">
+            <option value="room">Room contract</option>
+            <option value="job">Job or work contract</option>
+            <option value="arrival">First 90 days setup</option>
+          </select>
+        </label>
+        <label>
+          Deadline
+          <select name="deadline">
+            <option value="24h">Within 24 hours</option>
+            <option value="4h">Urgent: within 4 hours</option>
+            <option value="week">This week</option>
+          </select>
+        </label>
+        <label class="full-span">
+          Situation summary
+          <textarea name="summary" placeholder="Example: I found a room in Hongdae with KRW 5M deposit, but address registration is unclear."></textarea>
+        </label>
+        <button class="button primary" type="submit">Create review intake</button>
+        <output id="reviewOutput" class="review-output"></output>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>KoreaBridge MVP. Safety checks are educational and do not replace legal, labor, visa, or real estate advice.</p>
+    <p>Image source: <a href="https://commons.wikimedia.org/wiki/File:Street_hongdae_Seoul.jpg">Street hongdae Seoul.jpg</a>, U0894629, CC BY-SA 4.0.</p>
+  </footer>
+
+  <script src="risk-engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
